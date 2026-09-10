@@ -1,0 +1,6 @@
+{
+  "name": "Future Furnishing Industry",
+  "description": "Corporate business website for Future Furnishing Industry, showcasing Industrial Finishing Systems, Advanced Coating Solutions, and The Home Collection with product specifications, catalog downloads, inquiry forms, and dealer registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,425 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="100%" height="100%">
+  <!-- Definitions for gradients, patterns and filters -->
+  <defs>
+    <!-- Background wall/ceiling ambient gradient -->
+    <linearGradient id="factoryBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c2d30" />
+      <stop offset="40%" stop-color="#45474d" />
+      <stop offset="100%" stop-color="#737680" />
+    </linearGradient>
+    
+    <!-- Realistic Concrete floor gradient -->
+    <linearGradient id="concreteFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a8d94" />
+      <stop offset="30%" stop-color="#71737a" />
+      <stop offset="100%" stop-color="#4e5054" />
+    </linearGradient>
+
+    <!-- Deep Blue Oven Metal Shell -->
+    <linearGradient id="ovenBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b66af" />
+      <stop offset="40%" stop-color="#1f5194" />
+      <stop offset="100%" stop-color="#0e346b" />
+    </linearGradient>
+    
+    <linearGradient id="ovenBlueHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4785db" />
+      <stop offset="100%" stop-color="#1f5194" />
+    </linearGradient>
+
+    <!-- Interior Galvanized Steel Wall (warm metallic) -->
+    <linearGradient id="galvanizedWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eaebeb" />
+      <stop offset="50%" stop-color="#cfd1d4" />
+      <stop offset="100%" stop-color="#9ea1a6" />
+    </linearGradient>
+
+    <!-- Interior floor steel plate -->
+    <linearGradient id="interiorSteelFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4d6db" />
+      <stop offset="100%" stop-color="#929499" />
+    </linearGradient>
+
+    <!-- Motor yellow paint -->
+    <linearGradient id="motorYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fad02c" />
+      <stop offset="60%" stop-color="#e2b107" />
+      <stop offset="100%" stop-color="#a07d03" />
+    </linearGradient>
+
+    <!-- Silver conduits and metal piping -->
+    <linearGradient id="conduitSilver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#b0b4ba" />
+      <stop offset="100%" stop-color="#676a70" />
+    </linearGradient>
+
+    <!-- Exhaust blower grey metal -->
+    <linearGradient id="blowerGrey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a9da3" />
+      <stop offset="50%" stop-color="#76787d" />
+      <stop offset="100%" stop-color="#45464a" />
+    </linearGradient>
+
+    <!-- Gas cylinder copper/brown gradient -->
+    <linearGradient id="cylinderBrown" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c4e32" />
+      <stop offset="30%" stop-color="#925d3d" />
+      <stop offset="70%" stop-color="#5a3721" />
+      <stop offset="100%" stop-color="#382112" />
+    </linearGradient>
+
+    <!-- Warm radial light glow from high bay bulbs -->
+    <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffae6" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffe699" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#ffcc33" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffcc33" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft drop shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+    <filter id="ovenShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: FACTORY CEILING AND TRUSSES (Upper 1/3) -->
+  <rect width="1000" height="750" fill="url(#factoryBg)" />
+
+  <!-- Ceiling Steel Roof Girders & Framing (Trusses) -->
+  <g stroke="#202124" stroke-width="3" opacity="0.8" fill="none">
+    <!-- Horizontal beams -->
+    <line x1="0" y1="20" x2="1000" y2="20" stroke-width="6" />
+    <line x1="0" y1="75" x2="1000" y2="75" stroke-width="5" />
+    <line x1="0" y1="125" x2="1000" y2="125" stroke-width="4" />
+    
+    <!-- Vertical columns in distance -->
+    <line x1="50" y1="20" x2="50" y2="480" stroke-width="12" stroke="#252629" />
+    <line x1="900" y1="20" x2="900" y2="480" stroke-width="12" stroke="#252629" />
+    
+    <!-- Diagonal truss patterns -->
+    <path d="M 0,20 L 100,75 L 200,20 L 300,75 L 400,20 L 500,75 L 600,20 L 700,75 L 800,20 L 900,75 L 1000,20" />
+    <path d="M 0,75 L 100,125 L 200,75 L 300,125 L 400,75 L 500,125 L 600,75 L 700,125 L 800,75 L 900,125 L 1000,75" />
+    <path d="M 50,20 L 50,125 M 150,20 L 150,125 M 250,20 L 250,125 M 350,20 L 350,125 M 450,20 L 450,125 M 550,20 L 550,125 M 650,20 L 650,125 M 750,20 L 750,125 M 850,20 L 850,125 M 950,20 L 950,125" />
+  </g>
+
+  <!-- Industrial High-Bay Lamps (Warm light bulb glows matching photo) -->
+  <g>
+    <!-- Light 1 (Left) -->
+    <circle cx="180" cy="70" r="45" fill="url(#lightGlow)" />
+    <ellipse cx="180" cy="70" rx="15" ry="8" fill="#ffffff" />
+    <!-- Light 2 (Middle Left) -->
+    <circle cx="220" cy="190" r="30" fill="url(#lightGlow)" opacity="0.6" />
+    <ellipse cx="220" cy="190" rx="10" ry="5" fill="#ffffff" opacity="0.8" />
+    <!-- Light 3 (Right Top) -->
+    <circle cx="750" cy="15" r="40" fill="url(#lightGlow)" />
+    <ellipse cx="750" cy="15" rx="12" ry="6" fill="#ffffff" />
+  </g>
+
+  <!-- CONCRETE FLOOR OF WORKSHOP (Lower 2/3) -->
+  <rect y="420" width="1000" height="330" fill="url(#concreteFloor)" />
+  
+  <!-- Subtle floor lines/cracks for realism -->
+  <path d="M 0,550 L 1000,580 M 300,420 L 120,750 M 800,420 L 950,750" stroke="#3d3e42" stroke-width="1.5" opacity="0.4" fill="none" />
+
+  <!-- BACKGROUND MACHINERY (Faded to give depth) -->
+  <!-- Green drill press/milling machine on the far left background -->
+  <g fill="#435e51" stroke="#25362e" opacity="0.4">
+    <rect x="5" y="380" width="40" height="120" rx="2" />
+    <rect x="-10" y="440" width="30" height="60" />
+    <path d="M 10,380 L 15,320 L 35,325 L 30,380 Z" />
+    <rect x="0" y="490" width="55" height="15" rx="3" fill="#25362e" />
+  </g>
+
+  <!-- Green storage cabinet on the far right background -->
+  <g fill="#5c806e" stroke="#2c3d34" opacity="0.45">
+    <rect x="825" y="375" width="60" height="165" rx="1" />
+    <!-- Louver vents & doors -->
+    <line x1="835" y1="390" x2="875" y2="390" stroke="#2c3d34" stroke-width="2" />
+    <line x1="835" y1="400" x2="875" y2="400" stroke="#2c3d34" stroke-width="2" />
+    <line x1="835" y1="410" x2="875" y2="410" stroke="#2c3d34" stroke-width="2" />
+    <line x1="855" y1="375" x2="855" y2="540" stroke="#2c3d34" stroke-width="1.5" />
+    <!-- Base -->
+    <rect x="820" y="535" width="70" height="10" fill="#2c3d34" />
+  </g>
+
+  <!-- FOREGROUND METAL RAILS (Iron stock lying on floor, matching photo bottom left) -->
+  <g fill="#232426" stroke="#000" stroke-width="1" filter="url(#softShadow)" opacity="0.85">
+    <!-- Bar 1 diagonal -->
+    <polygon points="105,620 265,910 250,915 90,625" />
+    <!-- Bar 2 horizontal angle iron -->
+    <polygon points="105,620 255,680 252,692 100,632" />
+    <polygon points="100,632 252,692 250,696 95,635" fill="#3a3c40" />
+  </g>
+
+  <!-- LPG FUEL GAS CYLINDER & TROLLEY STAND (Right of Oven) -->
+  <g filter="url(#softShadow)">
+    <!-- Trolley Dolly (Black pipe frame) -->
+    <rect x="838" y="605" width="48" height="15" fill="#202124" rx="2" />
+    <circle cx="842" cy="615" r="8" fill="#111" />
+    <circle cx="842" cy="615" r="3" fill="#666" />
+    <circle cx="882" cy="615" r="8" fill="#111" />
+    <circle cx="882" cy="615" r="3" fill="#666" />
+    <line x1="846" y1="585" x2="846" y2="615" stroke="#333" stroke-width="4" />
+    <line x1="878" y1="585" x2="878" y2="615" stroke="#333" stroke-width="4" />
+
+    <!-- Gas Cylinder (Tall brown tank) -->
+    <!-- Tank base -->
+    <rect x="848" y="465" width="28" height="135" fill="url(#cylinderBrown)" stroke="#27170c" stroke-width="1" rx="4" />
+    <!-- Tank collar/neck -->
+    <path d="M 852,465 Q 862,450 872,465" fill="url(#cylinderBrown)" stroke="#27170c" stroke-width="1" />
+    <rect x="856" y="452" width="20" height="10" fill="#4d2f1c" rx="1" />
+    <!-- Top Valve assembly and regulator gauge -->
+    <path d="M 863,452 L 869,452 L 866,442 Z" fill="#9e9ba1" stroke="#333" stroke-width="1" />
+    <!-- Black mesh protector sleeve wrapped around cylinder body -->
+    <g opacity="0.3" stroke="#000" stroke-width="0.75" fill="none">
+      <path d="M 848,485 L 876,495 M 848,505 L 876,515 M 848,525 L 876,535 M 848,545 L 876,555 M 848,565 L 876,575 M 848,585 L 876,595" />
+      <path d="M 876,485 L 848,495 M 876,505 L 848,515 M 876,525 L 848,535 M 876,545 L 848,555 M 876,565 L 848,575 M 876,585 L 848,595" />
+      <line x1="855" y1="465" x2="855" y2="600" stroke="#000" stroke-width="0.5" />
+      <line x1="862" y1="465" x2="862" y2="600" stroke="#000" stroke-width="0.5" />
+      <line x1="869" y1="465" x2="869" y2="600" stroke="#000" stroke-width="0.5" />
+    </g>
+    <!-- Gas hoses looping back to the oven burner -->
+    <path d="M 866,448 Q 830,480 812,500" stroke="#222" stroke-width="2.5" fill="none" />
+  </g>
+
+  <!-- MAIN ASSEMBLY: BATCH CURING OVEN (Strict 3D projection from photo) -->
+  <g filter="url(#ovenShadow)">
+    
+    <!-- GROUND STEEL CHASSIS/SKIDS (Bottom Support Beams) -->
+    <g fill="#181a1c" stroke="#000" stroke-width="1.5">
+      <!-- Front base skid -->
+      <polygon points="90,622 550,695 550,715 90,642" />
+      <!-- Support columns/jacks under skids -->
+      <rect x="92" y="635" width="24" height="15" fill="#313336" />
+      <rect x="388" y="680" width="24" height="15" fill="#313336" />
+      <rect x="522" y="700" width="24" height="15" fill="#313336" />
+    </g>
+
+    <!-- 1. Left Blue Panel Wall (Side panel of oven facing viewer) -->
+    <polygon points="95,250 465,200 465,682 95,630" fill="url(#ovenBlue)" stroke="#0e2345" stroke-width="2" />
+    
+    <!-- Vertical joints and seams on the left blue wall -->
+    <g stroke="#08152b" stroke-width="2" opacity="0.8">
+      <line x1="187" y1="237" x2="187" y2="640" />
+      <line x1="280" y1="225" x2="280" y2="652" stroke-width="1.5" />
+      <line x1="373" y1="212" x2="373" y2="665" />
+    </g>
+    <!-- Panels highlight reflections -->
+    <g stroke="#4f8ee6" stroke-width="1.5" opacity="0.3">
+      <line x1="189" y1="237" x2="189" y2="640" />
+      <line x1="282" y1="225" x2="282" y2="652" />
+      <line x1="381" y1="211" x2="381" y2="665" />
+    </g>
+
+    <!-- Circular ventilation grills (silver with black radial lines, matching photo) -->
+    <g stroke="#1a1c1f" stroke-width="1">
+      <!-- Grill 1 (Upper Left) -->
+      <circle cx="187" cy="375" r="10" fill="url(#conduitSilver)" />
+      <circle cx="187" cy="375" r="6" fill="#1a1c1f" />
+      <!-- Grill 2 (Lower Left) -->
+      <circle cx="187" cy="525" r="10" fill="url(#conduitSilver)" />
+      <circle cx="187" cy="525" r="6" fill="#1a1c1f" />
+      <!-- Grill 3 (Upper Right) -->
+      <circle cx="300" cy="360" r="10" fill="url(#conduitSilver)" />
+      <circle cx="300" cy="360" r="6" fill="#1a1c1f" />
+      <!-- Grill 4 (Lower Right) -->
+      <circle cx="300" cy="510" r="10" fill="url(#conduitSilver)" />
+      <circle cx="300" cy="510" r="6" fill="#1a1c1f" />
+      <!-- Grill 5 (Far Right) -->
+      <circle cx="410" cy="345" r="10" fill="url(#conduitSilver)" />
+      <circle cx="410" cy="345" r="6" fill="#1a1c1f" />
+      <!-- Grill 6 (Far Right Bottom) -->
+      <circle cx="410" cy="495" r="10" fill="url(#conduitSilver)" />
+      <circle cx="410" cy="495" r="6" fill="#1a1c1f" />
+    </g>
+
+    <!-- High-voltage electrostatic warning stickers (Yellow triangles) -->
+    <g transform="translate(300, 410) skewY(6.5)">
+      <polygon points="0,-12 12,10 -12,10" fill="#fbbf24" stroke="#000" stroke-width="0.75" />
+      <path d="M -1,-4 L 3,-4 L -1,2 L 3,2 L -2,8" stroke="#000" stroke-width="1.5" fill="none" />
+    </g>
+
+    <!-- 2. Inside Heating Chamber (Visible through wide open front, projected correctly) -->
+    <!-- Inside floor plate (grey plate with 3D depth) -->
+    <polygon points="465,682 810,610 735,550 465,612" fill="url(#interiorSteelFloor)" stroke="#676a70" stroke-width="1" />
+    
+    <!-- Inside Rear/Back Wall (galvanized panels) -->
+    <polygon points="465,300 735,260 735,550 465,612" fill="url(#galvanizedWall)" />
+    <!-- Panel lines on the galvanized back wall -->
+    <g stroke="#919499" stroke-width="1.5">
+      <line x1="532" y1="290" x2="532" y2="596" />
+      <line x1="600" y1="280" x2="600" y2="581" />
+      <line x1="668" y1="270" x2="668" y2="565" />
+    </g>
+    <!-- Holes/Air Distribution Nozzles (Patterns of circular punches on back wall) -->
+    <g fill="#242529">
+      <!-- Grid pattern of small punches -->
+      <circle cx="500" cy="350" r="3" /><circle cx="500" cy="390" r="3" /><circle cx="500" cy="430" r="3" /><circle cx="500" cy="470" r="3" /><circle cx="500" cy="510" r="3" /><circle cx="500" cy="550" r="3" />
+      <circle cx="566" cy="340" r="3" /><circle cx="566" cy="380" r="3" /><circle cx="566" cy="420" r="3" /><circle cx="566" cy="460" r="3" /><circle cx="566" cy="500" r="3" /><circle cx="566" cy="540" r="3" />
+      <circle cx="634" cy="330" r="3" /><circle cx="634" cy="370" r="3" /><circle cx="634" cy="410" r="3" /><circle cx="634" cy="450" r="3" /><circle cx="634" cy="490" r="3" /><circle cx="634" cy="530" r="3" />
+      <circle cx="700" cy="320" r="3" /><circle cx="700" cy="360" r="3" /><circle cx="700" cy="400" r="3" /><circle cx="700" cy="440" r="3" /><circle cx="700" cy="480" r="3" /><circle cx="700" cy="520" r="3" />
+    </g>
+
+    <!-- Inside Left Wall Panel -->
+    <polygon points="465,300 465,612 465,612 465,300" stroke="#76787d" stroke-width="1" />
+
+    <!-- Inside Right Receding Wall Panel -->
+    <polygon points="735,260 810,240 810,610 735,550" fill="#cfd1d4" />
+    
+    <!-- Internal support struts/racks on right interior wall (horizontal ribs, matching photo) -->
+    <g stroke="#919499" stroke-width="2.5">
+      <line x1="745" y1="285" x2="800" y2="270" />
+      <line x1="745" y1="315" x2="800" y2="300" />
+      <line x1="745" y1="345" x2="800" y2="330" />
+      <line x1="745" y1="375" x2="800" y2="360" />
+      <line x1="745" y1="405" x2="800" y2="390" />
+      <line x1="745" y1="435" x2="800" y2="420" />
+      <line x1="745" y1="465" x2="800" y2="450" />
+      <line x1="745" y1="495" x2="800" y2="480" />
+      <line x1="745" y1="525" x2="800" y2="510" />
+      <line x1="745" y1="555" x2="800" y2="540" />
+    </g>
+
+    <!-- White vertical insulation plenum columns (inside the door frame, left and right) -->
+    <polygon points="475,315 500,311 500,600 475,604" fill="#fafafa" stroke="#d4d6db" stroke-width="1" />
+    <polygon points="775,270 800,263 800,590 775,597" fill="#fafafa" stroke="#d4d6db" stroke-width="1" />
+    <!-- Holes on white columns -->
+    <g fill="#333" opacity="0.7">
+      <circle cx="487" cy="340" r="2.5" /><circle cx="487" cy="400" r="2.5" /><circle cx="487" cy="460" r="2.5" /><circle cx="487" cy="520" r="2.5" /><circle cx="487" cy="580" r="2.5" />
+      <circle cx="787" cy="310" r="2.5" /><circle cx="787" cy="370" r="2.5" /><circle cx="787" cy="430" r="2.5" /><circle cx="787" cy="490" r="2.5" /><circle cx="787" cy="550" r="2.5" />
+    </g>
+
+    <!-- 3. Front Open Door Frame Border Pillars (Blue structural steel columns) -->
+    <!-- Front Left Column -->
+    <polygon points="465,240 510,234 510,676 465,682" fill="url(#ovenBlueHighlight)" stroke="#0e2345" stroke-width="1.5" />
+    <!-- Front Right Column -->
+    <polygon points="810,195 835,191 835,605 810,610" fill="url(#ovenBlueHighlight)" stroke="#0e2345" stroke-width="1.5" />
+    <!-- Front Top Header / Valance panel -->
+    <polygon points="465,240 835,191 835,245 465,290" fill="url(#ovenBlue)" stroke="#0e2345" stroke-width="1.5" />
+    <!-- Top bevel lip reflection -->
+    <polygon points="465,240 835,191 835,198 465,247" fill="#69a5fc" opacity="0.4" />
+
+    <!-- 4. Top Roof Assembly (Receding blue steel surface) -->
+    <polygon points="95,250 465,200 810,195 465,240" fill="#152845" stroke="#08152b" stroke-width="1.5" />
+
+    <!-- 5. Top Mounted Machinery System (Gears, motors and blowers, matching photo) -->
+    <!-- Component A: Left Yellow Circulation Motor and Mounting Bracket -->
+    <g transform="translate(255, 120)">
+      <!-- Mounting frame/pedestal (Grey steel box with support arms) -->
+      <polygon points="-10,65 50,71 35,90 -25,84" fill="#313336" stroke="#111" stroke-width="1" />
+      <!-- Steel frame highlights -->
+      <line x1="-10" y1="65" x2="-25" y2="84" stroke="#676a70" stroke-width="1" />
+      <!-- Vertical yellow motor cowling (cylinder) -->
+      <rect x="-10" y="20" width="35" height="50" fill="url(#motorYellow)" stroke="#6d4c06" stroke-width="1.5" rx="3" />
+      <!-- Top motor cover yellow cap -->
+      <ellipse cx="7.5" cy="20" rx="17.5" ry="6" fill="#fce170" stroke="#6d4c06" stroke-width="1" />
+      <!-- Motor fan vents (vertical black lines on yellow case) -->
+      <line x1="-3" y1="28" x2="-3" y2="60" stroke="#4a3304" stroke-width="1.5" />
+      <line x1="2" y1="28" x2="2" y2="60" stroke="#4a3304" stroke-width="1.5" />
+      <line x1="7" y1="28" x2="7" y2="60" stroke="#4a3304" stroke-width="1.5" />
+      <line x1="12" y1="28" x2="12" y2="60" stroke="#4a3304" stroke-width="1.5" />
+      <line x1="17" y1="28" x2="17" y2="60" stroke="#4a3304" stroke-width="1.5" />
+      <!-- Silver coupling shaft under motor -->
+      <rect x="2" y="70" width="10" height="12" fill="url(#conduitSilver)" />
+    </g>
+
+    <!-- Component B: Center Yellow Circulation Motor -->
+    <g transform="translate(485, 105)">
+      <!-- Mounting base frame -->
+      <polygon points="-10,65 50,71 35,90 -25,84" fill="#313336" stroke="#111" stroke-width="1" />
+      <!-- Yellow cylinder motor casing -->
+      <rect x="-10" y="25" width="32" height="45" fill="url(#motorYellow)" stroke="#6d4c06" stroke-width="1.5" rx="3" />
+      <!-- Cap -->
+      <ellipse cx="6" cy="25" rx="16" ry="5.5" fill="#fce170" stroke="#6d4c06" stroke-width="1" />
+      <!-- Finned cooling vents -->
+      <line x1="-3" y1="32" x2="-3" y2="60" stroke="#4a3304" stroke-width="1.25" />
+      <line x1="1" y1="32" x2="1" y2="60" stroke="#4a3304" stroke-width="1.25" />
+      <line x1="5" y1="32" x2="5" y2="60" stroke="#4a3304" stroke-width="1.25" />
+      <line x1="9" y1="32" x2="9" y2="60" stroke="#4a3304" stroke-width="1.25" />
+      <line x1="13" y1="32" x2="13" y2="60" stroke="#4a3304" stroke-width="1.25" />
+    </g>
+
+    <!-- Component C: Large Grey Exhaust Blower/Scroll Fan Housing (Right) -->
+    <g transform="translate(585, 80)" filter="url(#softShadow)">
+      <!-- Large grey fan scroll casing -->
+      <path d="M 0,55 C 0,10 40,0 80,15 C 110,25 125,55 120,85 L 120,110 L 0,110 Z" fill="url(#blowerGrey)" stroke="#2f3033" stroke-width="1.5" />
+      <!-- Blower output scroll rim highlight -->
+      <path d="M 120,85 L 155,75 L 155,102 L 120,110 Z" fill="#606266" stroke="#2f3033" stroke-width="1" />
+      <!-- Circular side inlet plate -->
+      <circle cx="55" cy="65" r="28" fill="#434447" stroke="#232426" stroke-width="1" />
+      <!-- Reinforcement ribs/spokes on side inlet plate -->
+      <circle cx="55" cy="65" r="5" fill="#111" />
+      <line x1="55" y1="37" x2="55" y2="93" stroke="#222" stroke-width="1" />
+      <line x1="27" y1="65" x2="83" y2="65" stroke="#222" stroke-width="1" />
+      <line x1="35" y1="45" x2="75" y2="85" stroke="#222" stroke-width="1" />
+      <line x1="35" y1="85" x2="75" y2="45" stroke="#222" stroke-width="1" />
+      <!-- Duct connection collar at top of scroll -->
+      <path d="M 120,40 L 140,30 L 140,55 L 120,62 Z" fill="#434447" stroke="#2f3033" />
+    </g>
+
+    <!-- 6. Grey Control Panel and Shiny Conduit Lines (Left blue wall, matching photo) -->
+    <!-- Grey Electrical Junction/Control Box -->
+    <g transform="translate(190, 395) skewY(6.5)" filter="url(#softShadow)">
+      <!-- Box shadow/3D effect -->
+      <rect x="-4" y="4" width="76" height="106" fill="#111" opacity="0.4" rx="2" />
+      <!-- Outer steel frame -->
+      <rect x="0" y="0" width="72" height="102" fill="url(#conduitSilver)" stroke="#4d5054" stroke-width="2.5" rx="3" />
+      <!-- Door latch handle -->
+      <rect x="62" y="45" width="4" height="15" fill="#222" rx="1" />
+      <!-- Status Lights on Panel Door -->
+      <circle cx="15" cy="20" r="3.5" fill="#22c55e" /> <!-- Ready (Green) -->
+      <circle cx="27" cy="20" r="3.5" fill="#eab308" /> <!-- Heating (Amber) -->
+      <circle cx="39" cy="20" r="3.5" fill="#ef4444" /> <!-- Fault (Red) -->
+      
+      <!-- Inside digital temp display screen -->
+      <rect x="12" y="32" width="48" height="20" fill="#000" rx="1" stroke="#333" stroke-width="1" />
+      <text x="16" y="46" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="black">210 C</text>
+      
+      <!-- Rotary Selector knobs -->
+      <circle cx="20" cy="70" r="5" fill="#2a2c30" stroke="#111" stroke-width="1.5" />
+      <line x1="20" y1="70" x2="20" y2="66" stroke="#fff" stroke-width="1.25" />
+      
+      <circle cx="52" cy="70" r="5" fill="#2a2c30" stroke="#111" stroke-width="1.5" />
+      <line x1="52" y1="70" x2="56" y2="70" stroke="#fff" stroke-width="1.25" />
+    </g>
+
+    <!-- Shiny Metal Conduit Piping Running Along Side Panel (Horizontal pipe, matching photo) -->
+    <!-- Upper Horizontal conduit running complete length -->
+    <path d="M 98,623 L 460,676" stroke="url(#conduitSilver)" stroke-width="6.5" fill="none" stroke-linejoin="round" />
+    <path d="M 98,623 L 460,676" stroke="#fff" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.6" />
+
+    <!-- Conduit holding clamps -->
+    <rect x="130" y="618" width="6" height="16" fill="#222" transform="rotate(6.5, 130, 618)" />
+    <rect x="235" y="630" width="6" height="16" fill="#222" transform="rotate(6.5, 235, 630)" />
+    <rect x="330" y="641" width="6" height="16" fill="#222" transform="rotate(6.5, 330, 641)" />
+    <rect x="425" y="652" width="6" height="16" fill="#222" transform="rotate(6.5, 425, 652)" />
+
+    <!-- Vertical Conduit running up from control box to the top deck -->
+    <path d="M 226,396 L 226,220" stroke="url(#conduitSilver)" stroke-width="4.5" fill="none" />
+    <path d="M 226,396 L 226,220" stroke="#fff" stroke-width="1" fill="none" opacity="0.5" />
+    
+    <!-- Vertical Conduit running down from control box to bottom horizontal line -->
+    <path d="M 226,504 L 226,638" stroke="url(#conduitSilver)" stroke-width="4.5" fill="none" />
+    <path d="M 226,504 L 226,638" stroke="#fff" stroke-width="1" fill="none" opacity="0.5" />
+
+    <!-- Component D: Red Emergency Stop mushroom push button (On front left structural pillar) -->
+    <g transform="translate(442, 420)" filter="url(#softShadow)">
+      <!-- Yellow enclosure box -->
+      <rect x="-10" y="-12" width="20" height="24" fill="#fbbf24" stroke="#a16207" stroke-width="1" rx="2" />
+      <!-- Red circular push button -->
+      <circle cx="0" cy="0" r="7" fill="#dc2626" stroke="#7f1d1d" stroke-width="1" />
+      <circle cx="-1.5" cy="-1.5" r="2.5" fill="#f87171" opacity="0.6" /> <!-- Highlight -->
+    </g>
+
+    <!-- Corner metal hinges/brackets for doors -->
+    <rect x="460" y="270" width="10" height="15" fill="#2f3033" stroke="#111" stroke-width="1" />
+    <rect x="460" y="610" width="10" height="15" fill="#2f3033" stroke="#111" stroke-width="1" />
+  </g>
+
+  <!-- Title & Specs Watermark block (matching other image styles) -->
+  <text x="50" y="720" fill="#2d2d30" font-family="monospace" font-size="12" font-weight="black" opacity="0.6" letter-spacing="1.5">FUTURE FURNISHING | FORCED AIR BATCH CURING OVEN | MULTI-FUEL BURNER SYSTEM</text>
+</svg>
